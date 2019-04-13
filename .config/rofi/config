@@ -2,16 +2,30 @@
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
+rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
+
 #		   			Window	  	  Border	 	 Separator
-rofi.color-window: argb:B0435e75, argb:D0435e75, argb:D0435e75
+!rofi.color-window: argb:B0251f39, argb:D0435e75, argb:D0435e75
 
 #		  			 Background	  Foreground	 Alt Background Highlight Bg   Highlight Fg
-rofi.color-normal: argb:00435e75, argb:FF9dbeda, argb:00486883, argb:A02C3E4F, argb:D09dbeda
-rofi.color-active: argb:00435e75, argb:D0734375, argb:00486883, argb:A02C3E4F, argb:D0734375
-rofi.color-urgent: argb:00435e75, argb:D0b9524e, argb:00486883, argb:A02C3E4F, argb:D0b9524e
+#rofi.color-normal: argb:00435e75, argb:FF9dbeda, argb:00486883, argb:A02C3E4F, argb:D09dbeda
+#rofi.color-normal: ${xrdb:background}, argb:FF9dbeda, argb:00486883, argb:A02C3E4F, argb:D09dbeda
+#rofi.color-active: argb:00435e75, argb:D0734375, argb:00486883, argb:A02C3E4F, argb:D0734375
+#rofi.color-urgent: argb:00435e75, argb:D0b9524e, argb:00486883, argb:A02C3E4F, argb:D0b9524e
 
 
 
 
-rofi.font: MonacoB 14
+rofi.font: Hack-Regular 20
 rofi.hide-scrollbar: true
+rofi.eh: 2
+#rofi.line-margin: 18
+#rofi.separator-style: solid
+#rofi.hide-scrollbar: true
+rofi.lines: 4
+#rofi.columns: 1
+rofi.width: 100
+rofi.padding: 400
+rofi.bw: 0
+#rofi.fullscreen: true
+#rofi.auto-select: false

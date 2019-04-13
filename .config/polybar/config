@@ -1,28 +1,99 @@
 [colors]
 ;background = ${xrdb:color0:#222}
 ;background = #212E36
-background = #251f39
-;background = #23172F
+;background = #251f39
+background = ${xrdb:background}
 ;it's ARGB so "cfl" is for transparency
-background-alt = #663047
-background-unf = #3E2A46
-background-vis = #4E3857
+background-alt = ${xrdb:color6}
+background-unf = ${xrdb:color5}
+background-vis = ${xrdb:color5}
 background-mod0 = #cf3C5A46
 background-mod1 = #cf546E53
 background-mod2 = #cf708963
-background-alrt = #cfA1BB76
+background-alrt = ${xrdb:color1}
 
-;foreground = ${xrdb:color7:#222}
-foreground = #FCFBFD
+foreground = #FFFFFF
+;foreground = ${xrdb:color7}
 foreground-alt = #FCFBFD
 primary = #FF0000
 secondary = #FF0000
 
+red = #e53935
+green = #4caf50
+blue = #00bcd4
+yellow = #ffee58
+orange = #f4511e
+
+[bar/bottomBar]
+monitor = ${env:MONITOR:eDP1}
+width = 100%
+height = 45
+offset-x = 0%
+radius = 0.0
+fixed-center = true
+bottom = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 0
+line-color = #f00
+
+border-size = 0
+border-color = #00000000
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 0
+module-margin-right = 0
+
+font-0 = Hack-Regular:size=15;1
+font-1 = FontAwesome:fontformat=truetype:size=15;1
+font-3 = Font Awesome 5 Free:style=Regular:pixelsize=15;1
+font-4 = Font Awesome 5 Free:style=Solid:pixelsize=15;1
+font-5 = Font Awesome 5 Brands:pixelsize=15;1
+font-2 = sm4tik:pixelsize=10;1
+
+modules-left = music
+modules-center =  
+modules-right = news
+
+tray-position = hidden
+tray-padding = 11
+tray-transparent = true
+tray-offset-y = 22
+tray-offset-x = -0
+tray-maxsize = 18
+tray-detached = true
+
+wm-restack = i3
+
+[module/music]
+type = custom/script
+interval = 5
+
+format = <label>
+format-foreground = ${colors.foreground}
+format-prefix = "  "
+;exec = python ~/.config/polybar/news.py
+exec = playerctl metadata --format "Now playing: {{ artist }} - {{ album }} - {{ title }}"
+
+[module/news]
+type = custom/script
+interval = 600
+
+format = <label>
+format-foreground = ${colors.foreground}
+format-prefix = "  "
+format-suffix = "  "
+exec = python ~/.config/polybar/news.py
+
 
 [bar/LeosBar]
-monitor = ${env:MONITOR:DP-3}
+monitor = ${env:MONITOR:eDP1}
 width = 100%
-height = 28
+height = 40
 offset-x = 0%
 radius = 0.0
 fixed-center = true
@@ -42,18 +113,18 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = Hack-Regular:size=8;1
+font-0 = Hack-Regular:size=15;1
 ;font-0 = Ubuntu:size=10;1
-font-1 = FontAwesome:fontformat=truetype:size=12;1
-font-3 = Font Awesome 5 Free:style=Regular:pixelsize=8;1
-font-4 = Font Awesome 5 Free:style=Solid:pixelsize=8;1
-font-5 = Font Awesome 5 Brands:pixelsize=8;1
+font-1 = FontAwesome:fontformat=truetype:size=15;1
+font-3 = Font Awesome 5 Free:style=Regular:pixelsize=15;1
+font-4 = Font Awesome 5 Free:style=Solid:pixelsize=15;1
+font-5 = Font Awesome 5 Brands:pixelsize=15;1
 font-2 = sm4tik:pixelsize=10;1
 
 
 modules-left = i3
 modules-center =  date weather
-modules-right =    wired-network volume powermenu
+modules-right =   backlight wireless-network battery volume powermenu
 
 tray-position = hidden
 tray-padding = 11
@@ -64,6 +135,37 @@ tray-maxsize = 18
 tray-detached = true
 
 wm-restack = i3
+
+[module/backlight]
+type = internal/backlight
+
+; Use the following command to list available cards:
+; $ ls -1 /sys/class/backlight/
+card = intel_backlight
+
+; Available tags:
+;   <label> (default)
+;   <ramp>
+;   <bar>
+format = <label>
+format-prefix = "   "
+format-suffix = "  "
+format-background = ${xrdb:color1}
+format-prefix-foreground = ${colors.yellow}
+
+; Available tokens:
+;   %percentage% (default)
+label = %percentage%%
+
+[module/test]
+type = custom/script
+interval = 5
+
+format = <label>
+format-foreground = ${colors.foreground}
+format-prefix = "  "
+;exec = python ~/.config/polybar/news.py
+exec = playerctl metadata --format "Now playing: {{ artist }} - {{ album }} - {{ title }}"
 
 [module/weather]
 type = custom/script
@@ -150,24 +252,28 @@ interface = wlp2s0
 interval = 3.0
 
 format-connected-prefix = " "
-
-format-connected-background = ${colors.background-alt}
+format-connected-background = ${xrdb:color2}
 format-connected = "   <ramp-signal> <label-connected>  "
 format-connected-underline = #9f78e1
-label-connected =
+label-connected = %essid%
 
-format-disconnected = " no wifi :( "
-format-disconnected-background = ${colors.background-unf}
+format-disconnected = " no wifi "
+format-disconnected-background = ${xrdb:color2}
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
 label-disconnected-foreground = ${colors.foreground-alt}
 
-ramp-signal-0 = "    0%"
-ramp-signal-1 = "    25%"
-ramp-signal-2 = "    50%"
-ramp-signal-3 = "    75%"
-ramp-signal-4 = "    100%"
-ramp-signal-foreground = ${colors.foreground-alt}
+ramp-signal-0 = "  "
+ramp-signal-0-foreground = ${colors.green}
+ramp-signal-1 = "  "
+ramp-signal-1-foreground = ${colors.green}
+ramp-signal-2 = "  "
+ramp-signal-2-foreground = ${colors.yellow}
+ramp-signal-3 = "  "
+ramp-signal-3-foreground = ${colors.red}
+ramp-signal-4 = "  "
+ramp-signal-4-foreground = ${colors.red}
+#ramp-signal-foreground = ${colors.foreground-alt}
 
 
 [module/wired-network]
@@ -198,7 +304,7 @@ interval = 5
 date = 
 date-alt = " %Y-%m-%d"
 
-time = "   %a %b %d     %I:%M %p  "
+time = "   %a %b %d     %H:%M  "
 time-alt = %H:%M:%S
 
 format-prefix-foreground = ${colors.foreground}
@@ -241,11 +347,12 @@ headphone-id = 9
 ; Default: false
 mapped = true
 
-format-muted-background = ${colors.background-unf}
-format-volume-background = ${colors.background-alt}
-format-volume = "   <ramp-volume>  <label-volume>  "
+format-muted-background = ${xrdb:color4}
+format-muted-foreground = ${colors.foreground}
+format-volume-background = ${xrdb:color4}
+format-volume = "  <ramp-volume> <label-volume>  "
 format-volume-prefix = " "
-label-muted = "   mute  "
+label-muted = "  mute  "
 
 ;label-muted = "          "
 
@@ -256,30 +363,36 @@ ramp-volume-1 = 
 
 [module/battery]
 type = internal/battery
-battery = BAT0
+battery = BAT1
 adapter = AC
 full-at = 97
 
-format-full-background = ${colors.background-mod2}
-format-charging-background = ${colors.background-mod1}
+format-full-background = ${xrdb:color3}
+format-charging-background = ${xrdb:color3}
 format-charging = "⁣   <animation-charging> <label-charging>"
 format-charging-underline = #ffb52a
 
 format-charging-suffix = "   "
 
-format-discharging-background = ${colors.background-alt}
+format-discharging-background = ${xrdb:color3}
 format-discharging = "⁣  <ramp-capacity> <label-discharging>  "
 format-discharging-underline = ${self.format-charging-underline}
 
-format-full = 
-format-full-prefix-foreground = ${colors.foreground-alt}
+format-full = "  <ramp-capacity> <label-full>  "
+format-full-prefix-foreground = ${colors.foreground}
+format-full-prefix = "  "
 format-full-underline = ${self.format-charging-underline}
 
 ramp-capacity-0 = 
+ramp-capacity-0-foreground = ${colors.red}
 ramp-capacity-1 = 
+ramp-capacity-1-foreground = ${colors.red}
 ramp-capacity-2 = 
+ramp-capacity-2-foreground = ${colors.yellow}
 ramp-capacity-3 = 
+ramp-capacity-3-foreground = ${colors.green}
 ramp-capacity-4 = 
+ramp-capacity-4-foreground = ${colors.green}
 
 ramp-capacity-foreground = ${colors.foreground-alt}
 
@@ -297,10 +410,10 @@ type = custom/menu
 format-spacing = 1
 
 label-open = "    "
-label-open-background = ${colors.background-unf}
+label-open-background = ${xrdb:color5}
 label-open-foreground = ${colors.foreground}
 label-close = "    cancel   "
-label-close-background = ${colors.background-unf}
+label-close-background = ${xrdb:color5}
 label-close-foreground = ${colors.foreground}
 label-separator = " "
 label-separator-foreground = ${colors.foreground-alt}
