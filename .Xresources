@@ -17,12 +17,13 @@ urxvt.perl-ext-common: default,clipboard
 
 !urxvt.font: xft:Ubuntu Mono:pixelsize=17,style=regular
 !urxvt.boldFont: xft:Ubuntu Mono:pixelsize=17,style=bold
-urxvt.font: xft:Hack-Regular:pixelsize=22, style=regular
-urxvt.boldFont: xft:Hack-Bold:pixelsize=22, style=bold
+urxvt.font: xft:Hack:pixelsize=13, style=regular
+!urxvt.boldFont: xft:Hack-Bold:pixelsize=13, style=bold
 urxvt.letterSpace: -1
 
 
-Xft.dpi: 130
+!Xft.dpi: 130
+Xft.dpi: 96
 Xft.antialias: true
 !Xft.rbga: none
 Xft.hintstyle: hintfull

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/leo/Pictures/wallpapers/black.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#000000",
+        "foreground": "#5BFF48",
+        "cursor": "#5EF14D"
+    },
+    "colors": {
+        "color0": "#1A4914",
+        "color1": "#42C331",
+        "color2": "#219F10",
+        "color3": "#52BF43",
+        "color4": "#2E7A24",
+        "color5": "#3FC62D",
+        "color6": "#34A425",
+        "color7": "#1B930B",
+        "color8": "#49BD3B",
+        "color9": "#49BD3B",
+        "color10": "#49BD3B",
+        "color11": "#49BD3B",
+        "color12": "#49BD3B",
+        "color13": "#49BD3B",
+        "color14": "#49BD3B",
+        "color15": "#49BD3B"
+    }
+}

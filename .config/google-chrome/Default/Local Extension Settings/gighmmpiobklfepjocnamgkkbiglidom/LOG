@@ -1,0 +1,18 @@
+2019/05/14-16:34:52.867 6bc Reusing MANIFEST /home/leo/.config/google-chrome/Default/Local Extension Settings/gighmmpiobklfepjocnamgkkbiglidom/MANIFEST-000001
+2019/05/14-16:34:52.868 6bc Recovering log #534
+2019/05/14-16:34:52.962 6bc Reusing old log /home/leo/.config/google-chrome/Default/Local Extension Settings/gighmmpiobklfepjocnamgkkbiglidom/000534.log 
+2019/05/14-16:35:52.652 950 Level-0 table #538: started
+2019/05/14-16:35:52.769 950 Level-0 table #538: 2476325 bytes OK
+2019/05/14-16:35:52.808 950 Delete type=0 #534
+2019/05/14-16:35:52.809 950 Compacting 4@0 + 1@1 files
+2019/05/14-16:35:52.937 950 Generated table #539@0: 6 keys, 1238491 bytes
+2019/05/14-16:35:52.937 950 Compacted 4@0 + 1@1 files => 1238491 bytes
+2019/05/14-16:35:52.974 950 compacted to: files[ 0 1 1 0 0 0 0 ]
+2019/05/14-16:35:52.974 950 Delete type=2 #535
+2019/05/14-16:35:52.975 950 Delete type=2 #533
+2019/05/14-16:35:52.976 950 Delete type=2 #527
+2019/05/14-16:35:52.976 950 Delete type=2 #538
+2019/05/14-16:35:52.977 950 Delete type=2 #530
+2019/05/14-17:35:52.568 950 Level-0 table #541: started
+2019/05/14-17:35:52.689 950 Level-0 table #541: 2476589 bytes OK
+2019/05/14-17:35:52.768 950 Delete type=0 #537

@@ -1,0 +1,18 @@
+2019/05/14-16:34:53.824 600 Reusing MANIFEST /home/leo/.config/google-chrome/Default/Session Storage/MANIFEST-000001
+2019/05/14-16:34:53.824 600 Recovering log #275
+2019/05/14-16:34:53.946 600 Reusing old log /home/leo/.config/google-chrome/Default/Session Storage/000275.log 
+2019/05/14-16:40:41.928 950 Level-0 table #279: started
+2019/05/14-16:40:41.966 950 Level-0 table #279: 18191 bytes OK
+2019/05/14-16:40:42.002 950 Delete type=0 #275
+2019/05/14-16:40:42.002 950 Compacting 4@0 + 1@1 files
+2019/05/14-16:40:42.157 950 Generated table #280@0: 3233 keys, 92037 bytes
+2019/05/14-16:40:42.157 950 Compacted 4@0 + 1@1 files => 92037 bytes
+2019/05/14-16:40:42.191 950 compacted to: files[ 0 1 1 0 0 0 0 ]
+2019/05/14-16:40:42.191 950 Delete type=2 #270
+2019/05/14-16:40:42.212 950 Delete type=2 #276
+2019/05/14-16:40:42.212 950 Delete type=2 #279
+2019/05/14-16:40:42.212 950 Delete type=2 #273
+2019/05/14-16:40:42.212 950 Delete type=2 #268
+2019/05/15-10:58:00.256 950 Level-0 table #282: started
+2019/05/15-10:58:00.369 950 Level-0 table #282: 25204 bytes OK
+2019/05/15-10:58:00.408 950 Delete type=0 #278

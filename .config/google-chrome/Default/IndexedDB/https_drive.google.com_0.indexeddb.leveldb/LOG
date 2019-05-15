@@ -1,0 +1,6 @@
+2019/05/15-10:50:55.603 300a Reusing MANIFEST /home/leo/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2019/05/15-10:50:55.604 300a Recovering log #252
+2019/05/15-10:50:55.717 300a Reusing old log /home/leo/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/000252.log 
+2019/05/15-10:50:57.146 1257 Level-0 table #257: started
+2019/05/15-10:50:57.263 1257 Level-0 table #257: 870018 bytes OK
+2019/05/15-10:50:57.364 1257 Delete type=0 #252

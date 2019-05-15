@@ -1,0 +1,15 @@
+2019/05/14-16:34:39.740 601 Reusing MANIFEST /home/leo/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
+2019/05/14-16:34:39.741 601 Recovering log #262
+2019/05/14-16:34:39.967 601 Reusing old log /home/leo/.config/google-chrome/Default/Sync Data/LevelDB/000262.log 
+2019/05/14-16:49:56.308 950 Level-0 table #266: started
+2019/05/14-16:49:56.351 950 Level-0 table #266: 113516 bytes OK
+2019/05/14-16:49:56.385 950 Delete type=0 #262
+2019/05/14-16:49:56.386 950 Compacting 4@0 + 1@1 files
+2019/05/14-16:49:56.463 950 Generated table #267@0: 3847 keys, 505267 bytes
+2019/05/14-16:49:56.463 950 Compacted 4@0 + 1@1 files => 505267 bytes
+2019/05/14-16:49:56.506 950 compacted to: files[ 0 1 1 0 0 0 0 ]
+2019/05/14-16:49:56.507 950 Delete type=2 #260
+2019/05/14-16:49:56.507 950 Delete type=2 #258
+2019/05/14-16:49:56.507 950 Delete type=2 #263
+2019/05/14-16:49:56.507 950 Delete type=2 #266
+2019/05/14-16:49:56.507 950 Delete type=2 #255

@@ -1,0 +1,24 @@
+2019/05/14-15:15:05.783 d0b Reusing MANIFEST /home/leo/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2019/05/14-15:15:05.783 d0b Recovering log #242
+2019/05/14-15:15:06.013 d0b Reusing old log /home/leo/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/000242.log 
+2019/05/14-15:15:13.585 1118 Level-0 table #247: started
+2019/05/14-15:15:13.704 1118 Level-0 table #247: 701867 bytes OK
+2019/05/14-15:15:13.830 1118 Delete type=0 #242
+2019/05/14-15:15:51.270 1118 Level-0 table #249: started
+2019/05/14-15:15:51.375 1118 Level-0 table #249: 703311 bytes OK
+2019/05/14-15:15:51.440 1118 Delete type=0 #246
+2019/05/14-15:34:38.251 1118 Level-0 table #251: started
+2019/05/14-15:34:38.398 1118 Level-0 table #251: 868256 bytes OK
+2019/05/14-15:34:38.499 1118 Delete type=0 #248
+2019/05/14-15:54:39.253 1118 Level-0 table #253: started
+2019/05/14-15:54:39.369 1118 Level-0 table #253: 862771 bytes OK
+2019/05/14-15:54:39.432 1118 Delete type=0 #250
+2019/05/14-15:54:39.435 1118 Compacting 4@0 + 1@1 files
+2019/05/14-15:54:39.598 1118 Generated table #254@0: 48 keys, 578922 bytes
+2019/05/14-15:54:39.598 1118 Compacted 4@0 + 1@1 files => 578922 bytes
+2019/05/14-15:54:39.631 1118 compacted to: files[ 0 1 1 0 0 0 0 ]
+2019/05/14-15:54:39.632 1118 Delete type=2 #247
+2019/05/14-15:54:39.632 1118 Delete type=2 #253
+2019/05/14-15:54:39.632 1118 Delete type=2 #244
+2019/05/14-15:54:39.633 1118 Delete type=2 #249
+2019/05/14-15:54:39.633 1118 Delete type=2 #251

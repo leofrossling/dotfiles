@@ -1,0 +1,394 @@
+{
+   "checksum": "84357d94f7b25f6391da9fbd9e92b386",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "12981393663960000",
+            "id": "15",
+            "meta_info": {
+               "last_visited": "13165950232763649",
+               "last_visited_desktop": "13201908128702094"
+            },
+            "name": "FB",
+            "sync_transaction_version": "144",
+            "type": "url",
+            "url": "http://www.facebook.com/"
+         }, {
+            "date_added": "12994976353620176",
+            "id": "16",
+            "meta_info": {
+               "last_visited": "13187998184604776",
+               "last_visited_desktop": "13202254738306455"
+            },
+            "name": "YT",
+            "sync_transaction_version": "158",
+            "type": "url",
+            "url": "http://www.youtube.com/feed/subscriptions"
+         }, {
+            "date_added": "12999646649750000",
+            "id": "17",
+            "meta_info": {
+               "last_visited": "13166611377849963",
+               "last_visited_desktop": "13201733825503380"
+            },
+            "name": "Hotmail",
+            "sync_transaction_version": "136",
+            "type": "url",
+            "url": "https://dub125.mail.live.com/default.aspx?id=64855"
+         }, {
+            "date_added": "13060115563748949",
+            "id": "18",
+            "meta_info": {
+               "last_visited": "13176490682505513",
+               "last_visited_desktop": "13202093875906934"
+            },
+            "name": "Twitch",
+            "sync_transaction_version": "144",
+            "type": "url",
+            "url": "https://www.twitch.tv/directory/following"
+         }, {
+            "date_added": "13105275830166842",
+            "id": "19",
+            "meta_info": {
+               "last_visited_desktop": "13202313306092007"
+            },
+            "name": "GD",
+            "sync_transaction_version": "167",
+            "type": "url",
+            "url": "https://drive.google.com/drive/u/0/my-drive"
+         }, {
+            "date_added": "13105276308939030",
+            "id": "20",
+            "meta_info": {
+               "last_visited": "13201197466259825",
+               "last_visited_desktop": "13202306170230091"
+            },
+            "name": "OD",
+            "sync_transaction_version": "155",
+            "type": "url",
+            "url": "https://onedrive.live.com/?id=root&cid=DF64F4C527B75C3F"
+         }, {
+            "date_added": "13031595229087908",
+            "id": "21",
+            "meta_info": {
+               "last_visited": "13198965273500782",
+               "last_visited_desktop": "13199891740352784"
+            },
+            "name": "HB",
+            "sync_transaction_version": "94",
+            "type": "url",
+            "url": "https://www.humblebundle.com/"
+         }, {
+            "date_added": "13039206954913000",
+            "id": "22",
+            "meta_info": {
+               "last_visited": "13156250975065450",
+               "last_visited_desktop": "13202301788498323"
+            },
+            "name": "G2Play",
+            "sync_transaction_version": "165",
+            "type": "url",
+            "url": "http://www.g2play.net/"
+         }, {
+            "date_added": "13084717675918533",
+            "id": "23",
+            "meta_info": {
+               "last_visited": "13201006505575018",
+               "last_visited_desktop": "13199635826164013"
+            },
+            "name": "Soluret Tyresö",
+            "sync_transaction_version": "124",
+            "type": "url",
+            "url": "http://www.solurettyreso.se/"
+         }, {
+            "date_added": "13094656794239671",
+            "id": "24",
+            "meta_info": {
+               "last_visited_desktop": "13197920806352097"
+            },
+            "name": "ILR",
+            "sync_transaction_version": "80",
+            "type": "url",
+            "url": "http://ilikeradio.se/"
+         }, {
+            "date_added": "13148412282103095",
+            "id": "25",
+            "meta_info": {
+               "last_visited": "13201899792145345",
+               "last_visited_desktop": "13202133735003027"
+            },
+            "name": "KTH SCHEMA",
+            "sync_transaction_version": "144",
+            "type": "url",
+            "url": "https://cloud.timeedit.net/kth/web/public01/ri15ZXQl034Z5oQv0Q071mZ6yQYZ40Q7lY41Y1gQ6025o7cZulQ7.html"
+         }, {
+            "date_added": "13183550352992607",
+            "id": "26",
+            "meta_info": {
+               "last_visited": "13198073052412778",
+               "last_visited_desktop": "13202305045998332"
+            },
+            "name": "Canvas",
+            "sync_transaction_version": "161",
+            "type": "url",
+            "url": "https://kth.instructure.com/"
+         }, {
+            "date_added": "13150151741625294",
+            "id": "28",
+            "meta_info": {
+               "last_visited_desktop": "13200357609437045"
+            },
+            "name": "Keybr",
+            "sync_transaction_version": "106",
+            "type": "url",
+            "url": "https://www.keybr.com/practice"
+         }, {
+            "date_added": "13166402347123505",
+            "id": "29",
+            "meta_info": {
+               "last_visited_desktop": "13191277699202008"
+            },
+            "name": "Josephus Problem -- from Wolfram MathWorld",
+            "sync_transaction_version": "31",
+            "type": "url",
+            "url": "http://mathworld.wolfram.com/JosephusProblem.html"
+         }, {
+            "date_added": "13165259534065090",
+            "id": "30",
+            "meta_info": {
+               "last_visited_desktop": "13183469863653126"
+            },
+            "name": "IT-ord | IDG:s ordlista",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://it-ord.idg.se/"
+         }, {
+            "date_added": "13159735917817483",
+            "id": "31",
+            "meta_info": {
+               "last_visited_desktop": "13200357613715599"
+            },
+            "name": "Investeringssparkonto (ISK) | SEB",
+            "sync_transaction_version": "108",
+            "type": "url",
+            "url": "https://seb.se/privat/spara-och-placera/oppna_ett_sparkonto/investeringssparkonto"
+         }, {
+            "date_added": "13158025546893890",
+            "id": "32",
+            "meta_info": {
+               "last_visited_desktop": "13193845682010643"
+            },
+            "name": "Can we build AI without losing control over it? | Sam Harris - YouTube",
+            "sync_transaction_version": "33",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=8nt3edWLgIg"
+         }, {
+            "date_added": "13161180450459062",
+            "id": "33",
+            "meta_info": {
+               "last_visited": "13177329687580560",
+               "last_visited_desktop": "13172163060593287"
+            },
+            "name": "https://snapcata.com/",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://snapcata.com/"
+         }, {
+            "date_added": "13177115166008906",
+            "id": "35",
+            "meta_info": {
+               "last_visited_desktop": "13189872592534847"
+            },
+            "name": "RIVER FLOWS IN YOU TAB (ver 2) by Sungha Jung @ Ultimate-Guitar.Com",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://tabs.ultimate-guitar.com/tab/sungha_jung/river_flows_in_you_tabs_1042664"
+         }, {
+            "date_added": "13179611242114211",
+            "id": "36",
+            "meta_info": {
+               "last_visited_desktop": "13179611242114398"
+            },
+            "name": "https://www.learnguitarinlondon.com/index.php/free-tab/",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://www.learnguitarinlondon.com/index.php/free-tab/"
+         }, {
+            "date_added": "13182896369756610",
+            "id": "37",
+            "meta_info": {
+               "last_visited_desktop": "13200584971807542"
+            },
+            "name": "http://curvefever.pro/",
+            "sync_transaction_version": "109",
+            "type": "url",
+            "url": "http://curvefever.pro/"
+         }, {
+            "date_added": "13182899953907080",
+            "id": "38",
+            "meta_info": {
+               "last_visited_desktop": "13183124780319168"
+            },
+            "name": "https://icons8.com/",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://icons8.com/"
+         }, {
+            "date_added": "13183501895127266",
+            "id": "39",
+            "meta_info": {
+               "last_visited_desktop": "13202216511219888"
+            },
+            "name": "https://services.swpc.noaa.gov/images/aurora-forecast-northern-hemisphere.jpg",
+            "sync_transaction_version": "148",
+            "type": "url",
+            "url": "https://services.swpc.noaa.gov/images/aurora-forecast-northern-hemisphere.jpg"
+         }, {
+            "date_added": "13187822808176587",
+            "id": "42",
+            "meta_info": {
+               "last_visited_desktop": "13198435757397492"
+            },
+            "name": "Fingerstyle",
+            "sync_transaction_version": "80",
+            "type": "url",
+            "url": "https://tommyemmanuel.wordpress.com/fingerstyle/"
+         }, {
+            "date_added": "13193323996046650",
+            "id": "43",
+            "meta_info": {
+               "last_visited": "13198839126451675",
+               "last_visited_desktop": "13201699353918891"
+            },
+            "name": "https://billing.misshosting.com/clientarea.php",
+            "sync_transaction_version": "136",
+            "type": "url",
+            "url": "https://billing.misshosting.com/clientarea.php"
+         } ],
+         "date_added": "13197464766999966",
+         "date_modified": "13202302637505153",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13192498017289817",
+               "id": "13",
+               "name": "Mordorock",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.threadless.com/product/6882/mordorock/tab,guys/style,crew-sweatshirt"
+            }, {
+               "date_added": "13192498284699936",
+               "id": "14",
+               "meta_info": {
+                  "last_visited_desktop": "13192498284700132"
+               },
+               "name": "Last Night by Jorge Lopez | Mens Tee Threadless",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.threadless.com/product/4508/last_night/tab,guys/style,shirt"
+            } ],
+            "date_added": "13197464837736786",
+            "date_modified": "13197464837736786",
+            "id": "12",
+            "name": "T-Shirts",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         } ],
+         "date_added": "13197464766999978",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "sync_transaction_version": "167",
+      "synced": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13134089974437353",
+               "id": "10",
+               "meta_info": {
+                  "last_visited": "13135627222415099"
+               },
+               "name": "Färslimpa med tomatsås och oliver",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.ica.se/recept/farslimpa-med-tomatsas-och-oliver-721593/"
+            }, {
+               "date_added": "13140728730408163",
+               "id": "11",
+               "meta_info": {
+                  "last_visited_desktop": "13140728730409109"
+               },
+               "name": "Tunnbrödsrulle",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.ica.se/recept/tunnbrodsrulle-med-krossad-potatis-och-skinka-714550/"
+            } ],
+            "date_added": "13197464837734693",
+            "date_modified": "13197464837734694",
+            "id": "5",
+            "name": "Recept",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "date_added": "13007563234072437",
+            "id": "6",
+            "name": "Försvarsmakten söker en Systemingenjör till Flyg/Sektion Helikopter jobb i Östergötlands Län Sverige",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "http://annonsoversikt.monster.se/f%C3%B6rsvarsmakten-s%C3%B6ker-en-systemingenj%C3%B6r-till-flyg-sektion-helikopter-jobb-%C3%B6sterg%C3%B6tlands-l%C3%A4n-sverige-120323873.aspx"
+         }, {
+            "date_added": "13168870270426515",
+            "id": "7",
+            "meta_info": {
+               "last_visited": "13168870270441968"
+            },
+            "name": "7 böcker som du måste läsa för att bli en riktig utvecklare - TechWorld",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://techworld.idg.se/2.2524/1.701219/bocker-utvecklare?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+idg%2Fvzzs+%28IDG.se%3A+Hetaste+IT-nyheterna+fr%C3%A5n+IDG.se%29"
+         }, {
+            "date_added": "13172605635065967",
+            "id": "8",
+            "meta_info": {
+               "last_visited": "13172669470231751"
+            },
+            "name": "No More Excuses: 4 Day Dumbbell Workout Routine",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "http://www.cuttystrength.com/4-day-dumbbell-workout-routine/"
+         }, {
+            "date_added": "13174343933297903",
+            "id": "9",
+            "meta_info": {
+               "last_visited": "13174940631232262"
+            },
+            "name": "Jordnöts- och chokladsmoothie - se & gör | Recept från Köket.se",
+            "sync_transaction_version": "80",
+            "type": "url",
+            "url": "https://www.koket.se/jordnots-och-chokladsmoothie-se-gor"
+         }, {
+            "date_added": "13198073106247704",
+            "id": "46",
+            "meta_info": {
+               "last_visited": "13198850141090489",
+               "last_visited_desktop": "13201900953422114"
+            },
+            "name": "Matematisk statistik,HF1012",
+            "sync_transaction_version": "143",
+            "type": "url",
+            "url": "http://ingforum.haninge.kth.se/armin/AR_18_19/HF1012/dirmatstat_18_19.html"
+         } ],
+         "date_added": "13197464766999980",
+         "date_modified": "13198073106247704",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

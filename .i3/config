@@ -9,28 +9,32 @@
 
 # exec --no-startup-id redshift
 
-exec_always --no-startup-id compton --config ~/.config/compton.conf
+exec_always --no-startup-id compton --config ~/.config/compton.conf --blur-method kawase --blur-strength 7
 #exec_always feh --bg-fill ~/Pictures/sunset.jpeg
 #exec_always --no-startup-id wal -a 90 -i ~/Pictures/planet.jpg
 exec_always --no-startup-id wal -R
+exec_always --no-startup-if sudo ~/.keyboard/change_colours.sh
 exec_always ~/.config/polybar/launch.sh
 exec_always ~/.screenlayout/setupLayout.sh
 exec_always --no-startup-id unclutter
 exec_always --no-startup-id xautolock -time 5 -locker "betterlockscreen -l blur"
+exec --no-startup-id syncthing
+
+bindsym $mod+Shift+x exec sudo ~/.keyboard/change_colours.sh
 
 # Variables {{{
 set $mod Mod4
 set $sup Mod1
 set $terminal tabbed -c urxvt -embed
-set $ws1  1
-set $ws2  2
+set $ws1  "1: "
+set $ws2  "2: "
 set $ws3  3
 set $ws4  4
 set $ws5  5
-set $ws6  
+set $ws6  6
 set $ws7  7
-set $ws8  8
-set $ws9  9
+set $ws8  "8: "
+set $ws9  "9: "
 set $ws10 10
 # }}}
 
@@ -52,7 +56,11 @@ exec --no-startup-id synclient HorizEdgeScroll=1 VertEdgeScroll=1 VertScrollDelt
 
 for_window [class="^.*"] border pixel 0
 #gaps inner 20
-gaps inner 50
+gaps inner 20
+gaps outer 5
+
+bindsym $mod+Shift+n    gaps inner current set 0; gaps outer current set 0
+bindsym $mod+Shift+m    gaps inner current set 20; gaps outer current set 5
 
 #new_window pixel 3
 #new_float pixel 3
@@ -73,8 +81,8 @@ client.urgent $base01 	$base01 $base05 $base00
 #Check .Xresources for font
 
 # start a terminal
-bindsym $mod+Return exec urxvt 
-
+bindsym $mod+Return exec urxvt
+bindsym $mod+Shift+Return exec /home/leo/.i3/samedir
 
 # kill focused window
 bindsym $mod+q kill
@@ -84,11 +92,16 @@ bindsym $mod+q kill
 #bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -bw 0 -width 100 -padding 400 -fullscreen
 bindsym $mod+d exec rofi -show run
 
+# Toggle hackermode
+bindsym $mod+h exec ~/.config/wal/toggle-hackermode.sh
+
+bindsym $mod+z exec --no-startup-id "rofi -modi drun,run,themes:~/.config/rofi/themeswitcher.sh -show themes"
+
 # change focus
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
+#bindsym $mod+h focus left
+#bindsym $mod+j focus down
+#bindsym $mod+k focus up
+#bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -148,6 +161,9 @@ bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
 
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2
@@ -166,7 +182,9 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 #assign [class = "Simplescreenrecorder"] 
 #assign [class = "Google Play Music Desktop Player"] 
 #assign [class = "focuswriter"] 
-
+assign [class = "discord"] $ws9
+assign [class = "Spotify"] $ws8
+for_window [class="Spotify"] move to workspace $ws8
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -175,6 +193,9 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+# Toggle polybar visibility
+bindsym $mod+m exec ~/.config/polybar/toggle_hide.sh
+
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -199,8 +220,19 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-
 bindsym $mod+r mode "resize"
+
+mode "moveit" {
+    bindsym Up move up 20px
+    bindsym Left move left 20px
+    bindsym Down move down 20px
+    bindsym Right move right 20px
+    bindsym $mod+n mode "default"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+n focus floating; mode "moveit"
+
 bindsym $mod+p exec betterlockscreen -l blur
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -239,8 +271,8 @@ bindsym $mod+F4 exec amixer -q -D pulse sset Master toggle;
 #exec pkill -RTMIN+10 i3blocks
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
 bindsym $mod+F2 exec xbacklight -inc 20 # decrease screen brightness
 bindsym $mod+F1 exec xbacklight -dec 20 # decrease screen brightness
 
