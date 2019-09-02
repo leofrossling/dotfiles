@@ -31,3 +31,10 @@
 * grub 2
 * htop
 * hack font
+
+## NVIDIA Drivers
+* Downloaded NVIDIA proprietary drivers
+* Downloaded optimus
+* Set NVIDIA to active GPU
+* added "acpi_osi=!" to GRUB config file
+* Created a /etc/modprobe.d/blacklist.conf and added line "install nvidia_drm /bin/false"
