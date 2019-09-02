@@ -149,9 +149,9 @@ type = internal/memory
 ; Seconds to sleep between updates
 ; Default: 1
 interval = 3
-format-prefix = "   "
+format-prefix = "   "
 format-suffix = "  "
-format-background = ${xrdb:color7}
+format-foreground = ${xrdb:color7}
 
 [module/cpu]
 type = internal/cpu
@@ -162,7 +162,7 @@ interval = 0.5
 
 format-prefix = "   "
 format-suffix = "  "
-format-background = ${xrdb:color6}
+format-foreground = ${xrdb:color6}
 
 [module/backlight]
 type = internal/backlight
@@ -379,9 +379,10 @@ headphone-id = 9
 ; Default: false
 mapped = true
 
-format-muted-background = ${xrdb:color4}
-format-muted-foreground = ${colors.foreground}
-format-volume-background = ${xrdb:color4}
+format-muted-background = ${colors.background}
+format-muted-foreground = ${xrdb:color4}
+format-volume-background = ${colors.background}
+format-volume-foreground = ${xrdb:color4}
 format-volume = "  <ramp-volume> <label-volume>  "
 format-volume-prefix = " "
 label-muted = "  mute  "
@@ -400,13 +401,15 @@ adapter = AC
 full-at = 97
 
 format-full-background = ${xrdb:color3}
-format-charging-background = ${xrdb:color3}
+format-charging-background = ${colors.background}
+format-charging-foreground = ${xrdb:color3}
 format-charging = "⁣   <animation-charging> <label-charging>"
 format-charging-underline = #ffb52a
 
 format-charging-suffix = "   "
 
-format-discharging-background = ${xrdb:color3}
+format-discharging-background = ${colors.background}
+format-discharging-foreground = ${xrdb:color3}
 format-discharging = "⁣  <ramp-capacity> <label-discharging>  "
 format-discharging-underline = ${self.format-charging-underline}
 
@@ -442,11 +445,11 @@ type = custom/menu
 format-spacing = 1
 
 label-open = "    "
-label-open-background = ${xrdb:color5}
-label-open-foreground = ${colors.foreground}
+label-open-foreground = ${xrdb:color5}
+label-open-background = ${colors.background}
 label-close = "    cancel   "
-label-close-background = ${xrdb:color5}
-label-close-foreground = ${colors.foreground}
+label-close-foreground = ${xrdb:color5}
+label-close-background = ${colors.background}
 label-separator = " "
 label-separator-foreground = ${colors.foreground-alt}
 
